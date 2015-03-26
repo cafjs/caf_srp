@@ -13,7 +13,8 @@ This repository contains a client and server CAF lib for password authentication
 
 ## API
 
-    lib/srp.js
+    lib/srpClient.js
+    lib/srpServer.js
  
 ## Configuration Example
 
