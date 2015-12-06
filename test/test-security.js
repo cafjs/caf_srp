@@ -1,10 +1,11 @@
 
-var caf_comp = require('caf_components');
+var caf_core =  require('caf_core');
+var caf_comp = caf_core.caf_components;
 var async = caf_comp.async;
 var myUtils = caf_comp.myUtils;
 var fs = require('fs');
 var path = require('path');
-var caf_security = require('caf_security');
+var caf_security = caf_core.caf_security;
 var tokens = caf_security.tokens;
 var srp = require('../index.js');
 var srpClient = srp.client;

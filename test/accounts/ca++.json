@@ -1,0 +1,22 @@
+{
+    "name" : "ca",
+    "components" : [
+        {
+            "name": "handler",
+            "components" : [
+                {
+                    "name": "props",
+                    "env" : {
+                        "stateVersion" : "$._.env.stateVersion",
+                        "testAccounts" : [
+                            {
+                                "username" : "foo",
+                                "password" : "pleasechange"
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    ]
+}
