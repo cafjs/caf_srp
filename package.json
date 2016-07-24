@@ -1,14 +1,14 @@
 {
     "name": "caf_srp",
     "description": "Cloud Assistants library for password authentication using SRP",
-    "version": "0.2.11",
+    "version": "0.2.12",
     "author": "Antonio Lain <antlai@cafjs.com>",
     "dependencies": {
         "minimist" : "^1.2.0",
         "srp" : "bjpbakker/node-srp#77f1c2e",
         "srp-shim" : "^0.2.0",
         "base64url" : "1.0.4",
-        "async" : ">=0.1.9",
+        "async" : "^1.5.2",
         "caf_core" : "^0.2.0"
     },
     "devDependencies": {
