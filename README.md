@@ -2,10 +2,10 @@
 
 Co-design permanent, active, stateful, reliable cloud proxies with your web app.
 
-See http://www.cafjs.com 
+See http://www.cafjs.com
 
 ## CAF authentication using SRP
-[![Build Status](http://ci.cafjs.com/api/badges/cafjs/caf_srp/status.svg)](http://ci.cafjs.com/cafjs/caf_srp)
+[![Build Status](https://travis-ci.org/cafjs/caf_srp.svg?branch=master)](https://travis-ci.org/cafjs/caf_srp)
 
 
 This repository contains a client and server CAF lib for password authentications using SRP.
@@ -14,7 +14,7 @@ This repository contains a client and server CAF lib for password authentication
 
     lib/srpClient.js
     lib/srpServer.js
- 
+
 ## Configuration Example
 
 ### framework.json
@@ -25,6 +25,3 @@ None
 ### ca.json
 
 None
-        
-            
- 
