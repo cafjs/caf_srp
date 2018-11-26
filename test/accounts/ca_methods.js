@@ -30,7 +30,7 @@ exports.methods = {
         accUtils.initSessions(this);
         accUtils.loadKeys(this, cb);
     },
-    'hello' : function(user, cb) {
+    'helloSRP' : function(user, cb) {
         try {
             var server = accUtils.sessionInstance(this, user.username);
             cb(null, server.hello(user));
@@ -63,4 +63,3 @@ exports.methods = {
 };
 
 //caf.init(module);
-
