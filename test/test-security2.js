@@ -17,12 +17,14 @@ var srpClient = require('../index.js').client;
 
 var options = { from : 'foo-ca1', ca : 'foo-ca1', unrestrictedToken : true,
                 password : 'pleasechange',
+                log: function(x) { console.error(x);},
                 accountsURL : 'http://root-accounts.vcap.me:3001',
                 securityClient: srpClient
               };
 
 var badOptions = { from : 'foo-ca1', ca : 'foo-ca1', unrestrictedToken : true,
                    password : 'badpassword',
+                   log: function(x) { console.error(x);},
                    accountsURL : 'http://root-accounts.vcap.me:3001',
                    securityClient: srpClient
               };
@@ -96,6 +98,12 @@ module.exports = {
                                         null, options);
                     s.onopen = function() {
                         s.getState(cb);
+                    };
+                    s.onclose = function(err) {
+                        if (err) {
+                            console.log(err);
+                        }
+                        test.ok(!err);
                     };
                 },
                 function(res, cb) {

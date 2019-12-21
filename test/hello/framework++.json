@@ -1,9 +1,10 @@
 {
     "name": "top",
    "env" : {
-        "appPublisher" :"F1CD0B760DCEE7DE770249F4512A9D0A",
-        "appLocalName" : "myApp",
-        "appSuffix" : "vcap.me"
+        "appPublisher" :"f1cd0b760dcee7de770249f4512a9d0a",
+        "appLocalName" : "myapp",
+        "appSuffix" : "vcap.me",
+        "quotaApp" : null
     },
     "components": [
         {
