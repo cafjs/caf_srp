@@ -13,7 +13,7 @@
     },
     "devDependencies": {
         "caf_core" : "^0.3.0",
-        "eslint": "^3.1.1",
+        "eslint": "^6.8.0",
         "nodeunit" : ">=0.9",
         "uglify-es": "^3.3.8"
     },
@@ -26,8 +26,8 @@
     "homepage": "http://www.cafjs.com",
     "scripts": {
         "test": "node ./node_modules/.bin/nodeunit",
-        "eslint" : "./node_modules/.bin/eslint .",
-        "eslintfix" : "./node_modules/.bin/eslint --fix ."
+        "eslint" : "./node_modules/.bin/eslint -c .eslintrc.js .",
+        "eslintfix" : "./node_modules/.bin/eslint -c .eslintrc.js --fix ."
     },
     "repository": {
         "type": "git",
