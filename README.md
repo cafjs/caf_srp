@@ -1,14 +1,13 @@
-# CAF (Cloud Assistant Framework)
+# Caf.js
 
-Co-design permanent, active, stateful, reliable cloud proxies with your web app.
+Co-design permanent, active, stateful, reliable cloud proxies with your web app and gadgets.
 
-See http://www.cafjs.com
+See https://www.cafjs.com
 
-## CAF authentication using SRP
+## Library for Authentication using SRP
 [![Build Status](https://travis-ci.org/cafjs/caf_srp.svg?branch=master)](https://travis-ci.org/cafjs/caf_srp)
 
-
-This repository contains a client and server CAF lib for password authentications using SRP.
+This repository contains a client and server `Caf.js` lib for password authentications using SRP.
 
 ## API
 
