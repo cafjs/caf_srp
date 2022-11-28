@@ -3,7 +3,7 @@
     "env" : {
         "appPublisher" :"f1cd0b760dcee7de770249f4512a9d0a",
         "appLocalName" : "helloworld",
-        "appSuffix" : "vcap.me",
+        "appSuffix" : "localtest.me",
         "quotaApp" : null
     },
     "components": [
@@ -20,7 +20,7 @@
                 "privateKeyFile": null,
                 "publicKeyFile" : null,
                 "allowNobodyUser" : false,
-                "accountsURL": "http://xx-accounts.vcap.me:3001"
+                "accountsURL": "http://xx-accounts.localtest.me:3001"
             }
         }
     ]

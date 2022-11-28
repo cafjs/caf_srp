@@ -8,9 +8,9 @@ var hello = require('./helloSecurity/main.js');
 
 var app = hello;
 
-var HOST_AUTH='root-accounts.vcap.me';
+var HOST_AUTH='root-accounts.localtest.me';
 var PORT_AUTH=3001;
-var HOST='root-hello.vcap.me';
+var HOST='root-hello.localtest.me';
 var PORT=3000;
 
 var srpClient = require('../index.js').client;
@@ -18,14 +18,14 @@ var srpClient = require('../index.js').client;
 var options = { from : 'foo-ca1', ca : 'foo-ca1', unrestrictedToken : true,
                 password : 'pleasechange',
                 log: function(x) { console.error(x);},
-                accountsURL : 'http://root-accounts.vcap.me:3001',
+                accountsURL : 'http://root-accounts.localtest.me:3001',
                 securityClient: srpClient
               };
 
 var badOptions = { from : 'foo-ca1', ca : 'foo-ca1', unrestrictedToken : true,
                    password : 'badpassword',
                    log: function(x) { console.error(x);},
-                   accountsURL : 'http://root-accounts.vcap.me:3001',
+                   accountsURL : 'http://root-accounts.localtest.me:3001',
                    securityClient: srpClient
               };
 
@@ -94,7 +94,7 @@ module.exports = {
         async.waterfall(
             [
                 function(cb) {
-                    s = new cli.Session('http://root-helloworld.vcap.me:3000',
+                    s = new cli.Session('http://root-helloworld.localtest.me:3000',
                                         null, options);
                     s.onopen = function() {
                         s.getState(cb);
@@ -127,7 +127,7 @@ module.exports = {
         async.waterfall(
             [
                 function(cb) {
-                    s = new cli.Session('http://root-helloworld.vcap.me:3000',
+                    s = new cli.Session('http://root-helloworld.localtest.me:3000',
                                         null, badOptions);
                     s.onopen = function() {
                         var cb1 = function(err, data) {

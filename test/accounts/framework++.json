@@ -3,7 +3,7 @@
     "env" : {
         "appPublisher" :"f1cd0b760dcee7de770249f4512a9d0a",
         "appLocalName" : "accounts",
-        "appSuffix" : "vcap.me",
+        "appSuffix" : "localtest.me",
         "quotaApp" : null
     },
     "components": [
